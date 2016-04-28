@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Trs_Cron>
+      <version>1.0</version>
+    </Trs_Cron>
+  </modules>
+  <crontab>
+    <jobs>
+      <trs_varnish_cache_warmer>
+        <schedule>
+          <cron_expr>* * * * *</cron_expr>
+        </schedule>
+        <run>
+          <model>cron/varnish_warmer::run</model>
+        </run>
+      </trs_varnish_cache_warmer>
+    </jobs>
+  </crontab>
+  <global>
+    <models>
+      <cron>
+        <class>Trs_Cron_Model</class>
+      </cron>
+    </models>
+  </global>
+</config>
