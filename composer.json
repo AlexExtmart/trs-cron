@@ -6,7 +6,7 @@
   "minimum-stability": "stable",
   "extra": {
     "map": [
-      ["app/code/community", "app/code/community"],
+      ["app/code/community/Trs", "app/code/community/Trs"],
       ["app/etc/modules/Trs_Cron.xml", "app/etc/modules/Trs_Cron.xml"]
     ]
   },
