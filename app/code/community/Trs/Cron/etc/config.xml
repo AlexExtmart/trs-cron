@@ -9,7 +9,7 @@
     <jobs>
       <trs_varnish_cache_warmer>
         <schedule>
-          <cron_expr>* * * * *</cron_expr>
+          <cron_expr>0 0 * * *</cron_expr> <!-- Defaults to run every 24 hours -->
         </schedule>
         <run>
           <model>cron/varnish_warmer::run</model>
