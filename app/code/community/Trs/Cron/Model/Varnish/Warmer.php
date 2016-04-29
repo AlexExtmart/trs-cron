@@ -4,7 +4,7 @@ require_once 'abstract.php';
 class Trs_Cron_Model_Varnish_Warmer extends Mage_Shell_Abstract
 {
   public function run() {
-    $shellScript = Mage::getBaseDir('base').DS.'vendor'.DS.'nexcess'.DS.'magento-turpentine'.DS.'util'.DS.'warm-cache.sh';
+    $shellScript = Mage::getBaseDir('code').DS.'community'.DS.'Trs'.DS.'Cron'.DS.'shell'.DS.'warm-cache.sh';
     $siteMapFile = Mage::getBaseDir('base').DS.'sitemap.xml';
     $siteMapUrl  = Mage::getStoreConfig(Mage_Core_Model_Store::XML_PATH_SECURE_BASE_URL).'sitemap.xml';
 

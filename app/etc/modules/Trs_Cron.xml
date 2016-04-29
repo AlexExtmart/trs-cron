@@ -3,7 +3,7 @@
   <modules>
     <Trs_Cron>
       <active>true</active>
-      <codePool>local</codePool>
+      <codePool>community</codePool>
     </Trs_Cron>
   </modules>
 </config>
