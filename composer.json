@@ -1,0 +1,22 @@
+{
+  "name": "nathan/trs-cron",
+  "description": "Cron jobs extension for TRS",
+  "type": "magento-module",
+  "license": "proprietary",
+  "minimum-stability": "stable",
+  "extra": {
+    "map": [
+      ["app/code/community", "app/code/community"],
+      ["app/etc/modules/Trs_Cron.xml", "app/etc/modules/Trs_Cron.xml"]
+    ]
+  },
+  "authors": [
+    {
+      "name": "Nathan Pearson",
+      "email": "npearson72@gmail.com"
+    }
+  ],
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  }
+}
