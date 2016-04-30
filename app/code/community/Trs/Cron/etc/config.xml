@@ -12,9 +12,17 @@
           <cron_expr>0 0 * * *</cron_expr> <!-- Defaults to run every 24 hours -->
         </schedule>
         <run>
-          <model>cron/varnish_warmer::run</model>
+          <model>cron/varnish_cache::warm</model>
         </run>
       </trs_varnish_cache_warmer>
+      <trs_redis_garbage_collection>
+        <schedule>
+          <cron_expr>0 0 * * *</cron_expr> <!-- Defaults to run every 24 hours -->
+        </schedule>
+        <run>
+          <model>cron/redis_garbage::collect</model>
+        </run>
+      </trs_redis_garbage_collection>
     </jobs>
   </crontab>
   <global>
